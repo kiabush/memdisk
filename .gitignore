@@ -1,0 +1,15 @@
+.agents/
+.codex/
+
+*.zip
+*.tmp
+README.tmp
+
+downloaded_from_memdisk.*
+
+# Local demo/output assets. Remove lines if you want to publish them.
+*.ipynb
+*.jpg
+*.jpeg
+*.png
+*.pptx

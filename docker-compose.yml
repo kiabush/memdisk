@@ -1,0 +1,14 @@
+services:
+  memdisk:
+    build: .
+    image: kiabush/memdisk:latest
+    container_name: memdisk
+    ports:
+      - "6380:6380"
+    tmpfs:
+      - /memdisk:size=2g,mode=1777
+    environment:
+      MEMDISK_ROOT: /memdisk
+      MEMDISK_PORT: 6380
+      MEMDISK_MAX_UPLOAD: 512m
+      MEMDISK_CLEANUP_INTERVAL: 30s

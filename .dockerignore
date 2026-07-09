@@ -1,0 +1,10 @@
+.git
+.agents
+.codex
+*.zip
+*.ipynb
+*.jpg
+*.jpeg
+*.png
+downloaded_from_memdisk.*
+README.tmp
