@@ -1,5 +1,9 @@
 # memDisk
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kiabush/memdisk/main/memDisk.png" alt="memDisk logo" width="160">
+</p>
+
 A tiny RAM-backed file store for Docker.
 
 memDisk gives you a simple HTTP API over a RAM-backed filesystem such as Docker `tmpfs` or `/dev/shm`. It is useful for temporary files, cache-like file storage, preprocessing pipelines, AI/audio/video scratch data, and short-lived artifacts.

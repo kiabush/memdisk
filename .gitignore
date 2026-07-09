@@ -12,4 +12,5 @@ downloaded_from_memdisk.*
 *.jpg
 *.jpeg
 *.png
+!memDisk.png
 *.pptx
