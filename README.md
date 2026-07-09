@@ -1,12 +1,12 @@
-# memDisk
+# MemDisk
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kiabush/memdisk/main/memDisk.png" alt="memDisk logo" width="160">
+  <img src="https://raw.githubusercontent.com/kiabush/memdisk/main/MemDisk.png" alt="memDisk logo" width="160">
 </p>
 
 A tiny RAM-backed file store for Docker.
 
-memDisk gives you a simple HTTP API over a RAM-backed filesystem such as Docker `tmpfs` or `/dev/shm`. It is useful for temporary files, cache-like file storage, preprocessing pipelines, AI/audio/video scratch data, and short-lived artifacts.
+MemDisk gives you a simple HTTP API over a RAM-backed filesystem such as Docker `tmpfs` or `/dev/shm`. It is useful for temporary files, cache-like file storage, preprocessing pipelines, AI/audio/video scratch data, and short-lived artifacts.
 
 Docker image: `kiabush/memdisk`
 
@@ -53,7 +53,7 @@ To change the RAM size, edit the `tmpfs` line in `docker-compose.yml`, for examp
 Upload a normal file:
 
 ```bash
-curl -X PUT localhost:6380/files/hello.txt --data-binary "hello memDisk"
+curl -X PUT localhost:6380/files/hello.txt --data-binary "hello MemDisk"
 ```
 
 Download it:
@@ -110,7 +110,7 @@ curl -X DELETE localhost:6380/files/hello.txt
 /memdisk
   /files       normal RAM-backed files
   /cache       cache namespace, reserved for future eviction policies
-  /pinned      files that should not be auto-deleted by memDisk
+  /pinned      files that should not be auto-deleted by MemDisk
   /tmp
     /{ttl}     files expire after the duration in the folder name
 ```
